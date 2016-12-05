@@ -2,6 +2,7 @@ body {
   background-image: url("../img/bg1.png");
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
   margin: 0;
 }
 
@@ -44,8 +45,8 @@ a, a:link, a:visited {
 }
 
 #rules {
-  width: 1000pt;
-  height: 600pt;
+  width: 80%;
+  height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
   position: absolute;
@@ -67,8 +68,8 @@ a, a:link, a:visited {
 }
 
 #changelog {
-  width: 1000pt;
-  height: 600pt;
+  width: 80%;
+  height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
   position: absolute;
@@ -90,8 +91,8 @@ a, a:link, a:visited {
 }
 
 #terms {
-  width: 1000pt;
-  height: 600pt;
+  width: 80%;
+  height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
   position: absolute;
@@ -142,9 +143,11 @@ a, a:link, a:visited {
   height: 250pt;
 }
 
+/* MENU */
+
 #Menu {
   width: 20%;
-  height: 95vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,21 +159,20 @@ a, a:link, a:visited {
 
 .navs {
   width: 70pt;
-  height: 100pt;
+  height: 70pt;
   background-color: rgba(000, 0, 0, 0.1);
   display: flex;
   align-items: center;
   transition: 0.3s;
   overflow: hidden;
   cursor: pointer;
-  z-index: 3;
 }
 
 .navs h1 {
   font-size: 20pt;
   font-family: sans-serif;
   color: white;
-  margin-left: 58pt;
+  margin-left: 60pt;
 }
 
 .navs i {
