@@ -158,8 +158,8 @@ a, a:link, a:visited {
 }
 
 .navs {
-  width: 70pt;
-  height: 70pt;
+  width: 15vh;
+  height: 13vh;
   background-color: rgba(000, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -169,20 +169,20 @@ a, a:link, a:visited {
 }
 
 .navs h1 {
-  font-size: 20pt;
+  font-size: 3vh;
   font-family: sans-serif;
   color: white;
-  margin-left: 60pt;
+  margin-left: 5vh;
 }
 
 .navs i {
-  font-size: 40pt;
+  font-size: 10vh;
   color: white;
-  margin-left: 16pt;
+  margin-left: 2vh;
 }
 
 .navs:hover {
-  width: 300pt;
+  width: 60vh;
   border-bottom-right-radius: 10pt;
   border-top-right-radius: 10pt;
 }
