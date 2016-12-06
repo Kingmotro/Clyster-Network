@@ -24,11 +24,12 @@ a, a:link, a:visited {
 }
 
 #contents hr {
-  width: 400pt;
+  width: 30vh;
 }
 
 #contents h1 {
   font-family: sans-serif;
+  text-align: center;
 }
 
 .tabClose {
@@ -139,8 +140,8 @@ a, a:link, a:visited {
 }
 
 #Logo img {
-  width: 50vh;
-  height: 50vh;
+  width: 30vh;
+  height: 30vh;
 }
 
 /* MENU */
@@ -158,8 +159,8 @@ a, a:link, a:visited {
 }
 
 .navs {
-  width: 15vh;
-  height: 13vh;
+  width: 11vh;
+  height: 10vh;
   background-color: rgba(000, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -176,13 +177,13 @@ a, a:link, a:visited {
 }
 
 .navs i {
-  font-size: 10vh;
+  font-size: 6vh;
   color: white;
   margin-left: 2vh;
 }
 
 .navs:hover {
-  width: 60vh;
+  width: 40vh;
   border-bottom-right-radius: 10pt;
   border-top-right-radius: 10pt;
 }
