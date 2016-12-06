@@ -64,6 +64,7 @@ a, a:link, a:visited {
 
 #mobilemenuClose i {
   margin-right: 12pt;
+  cursor: pointer;
 }
 
 #mobilemenuNavs {
@@ -166,7 +167,6 @@ a, a:link, a:visited {
   height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
-  position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 3;
@@ -189,7 +189,6 @@ a, a:link, a:visited {
   height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
-  position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 3;
@@ -212,7 +211,6 @@ a, a:link, a:visited {
   height: 80vh;
   background-color: white;
   box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
-  position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 3;
