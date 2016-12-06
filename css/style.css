@@ -139,8 +139,8 @@ a, a:link, a:visited {
 }
 
 #Logo img {
-  width: 250pt;
-  height: 250pt;
+  width: 50vh;
+  height: 50vh;
 }
 
 /* MENU */
