@@ -65,3 +65,5 @@ function menuCloseRules() {
   document.getElementById('changelog').style.display = 'none';
   document.getElementById('terms').style.display = 'none';
 }
+
+new Clipboard('.ip');

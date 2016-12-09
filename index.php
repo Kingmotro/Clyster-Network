@@ -132,12 +132,11 @@
         </a>
       </div>
 
-      <div id="Info">
-		      <p id="ip">mc.clyster.net</p>
+      <div id="Info" class="ip" data-clipboard-text="mc.clyster.net">
+		      <p id="ip">MC.CLYSTER.NET</p>
 		      <div id="playersOnline">
+               <p id="online">Online:</p>
 			         <p class="onlinePlayers"><?php echo $playeronline; ?></p>
-			         <p id="playerofmax">/</p>
-               <p class="onlinePlayers"><?php echo $maxplayer; ?></p>
 		      </div>
 	    </div>
     </div>
@@ -299,17 +298,23 @@
 
     }
 
+    @media screen and (min-width: 1024pt) {
+      #Info {
+        background-color: rgba(000, 0, 0, 0.1);
+      }
+    }
+
     /* CONTENTS */
 
     #contents {
-      width: 80%;
+      width: 60%;
       height: 95vh;
       z-index: 5;
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      left: 10%;
+      left: 20%;
     }
 
     #contents hr {
@@ -336,7 +341,7 @@
     }
 
     #rules {
-      width: 80%;
+      width: 90%;
       height: 80vh;
       background-color: white;
       box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
@@ -357,7 +362,7 @@
     }
 
     #changelog {
-      width: 80%;
+      width: 90%;
       height: 80vh;
       background-color: white;
       box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
@@ -378,7 +383,7 @@
     }
 
     #terms {
-      width: 80%;
+      width: 90%;
       height: 80vh;
       background-color: white;
       box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
@@ -481,30 +486,25 @@
     #Info {
       width: 20%;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
-      height: 60vh;
-    }
-
-    #playersOnline p {
-      font-size: 10vh;
-      font-family: sans-serif;
-      padding: 5pt;
-      margin: 0;
-      font-weight: bold;
-    }
-
-    #playerofmax {
-      color: white;
-    }
-
-    .onlinePlayers {
-      color: #0C707F;
+      justify-content: center;
+      height: 25vh;
+      cursor: pointer;
     }
 
     #playersOnline {
+      font-size: 10vh;
+      font-family: sans-serif;
+      margin: 0;
+      font-weight: bold;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .onlinePlayers {
+      color: white;
+      margin: 0;
     }
 
     #ip {
@@ -512,10 +512,17 @@
       font-family: sans-serif;
       padding: 5pt;
       margin: 0;
-      color: #0C707F;
+      color: white;
       text-align: center;
-      margin-bottom: 70pt;
       font-weight: bold;
+      cursor: pointer;
+    }
+
+    #online {
+      font-size: 4vh;
+      font-family: sans-serif;
+      color: #0C707F;
+      margin: 0;
     }
 
     </style>
@@ -528,6 +535,7 @@
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script src="./js/clipboard.min.js"></script>
     <script src="./js/particles.js/particles.min.js"></script>
     <script src="./js/script.js"></script>
 
