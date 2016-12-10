@@ -220,6 +220,7 @@
       background-color: rgba(255, 255, 255, 0.9);
       position: fixed;
       z-index: 10;
+      overflow-y: auto;
     }
 
     #mobilemenuClose {
@@ -261,7 +262,7 @@
 
     /* RESPONSIVE MOBILE EVENTS */
 
-    @media screen and (max-width: 1024pt) {
+    @media screen and (max-width: 960pt) {
 
       /* STANDARD MENU DISPLAY NONE */
 
@@ -317,7 +318,7 @@
 
     }
 
-    @media screen and (min-width: 1024pt) {
+    @media screen and (min-width: 960pt) {
       #Info {
         background-color: rgba(000, 0, 0, 0.1);
       }
