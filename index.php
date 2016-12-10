@@ -133,11 +133,30 @@
       </div>
 
       <div id="Info" class="ip" data-clipboard-text="mc.clyster.net">
-		      <p id="ip">MC.CLYSTER.NET</p>
-		      <div id="playersOnline">
-               <p id="online">Online:</p>
-			         <p class="onlinePlayers"><?php echo $playeronline; ?></p>
-		      </div>
+        <div id="copiedIP">
+          <div class="checkmark">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 161.2 161.2" enable-background="new 0 0 161.2 161.2" xml:space="preserve">
+             <path class="path" fill="none" stroke="#0C707F" stroke-miterlimit="10" d="M425.9,52.1L425.9,52.1c-2.2-2.6-6-2.6-8.3-0.1l-42.7,46.2l-14.3-16.4
+            	c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5
+            	c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z"/>
+              <circle class="path" fill="none" stroke="#0C707F" stroke-width="4" stroke-miterlimit="10" cx="80.6" cy="80.6" r="62.1"/>
+              <polyline class="path" fill="none" stroke="#0C707F" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="113,52.8
+            	74.1,108.4 48.2,86.4 "/>
+
+          <circle class="spin" fill="none" stroke="#0C707F" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="120.2175,12.2175" cx="80.6" cy="80.6" r="73.9"/>
+
+          </svg>
+
+          </div>
+          <p id="copiedText">See you soon!</p>
+          <p id="copiedText2">copied mc.clyster.net</p>
+        </div>
+		    <p id="ip">MC.CLYSTER.NET</p>
+		    <div id="playersOnline">
+            <p id="online">Online:</p>
+			      <p class="onlinePlayers"><?php echo $playeronline; ?></p>
+		    </div>
 	    </div>
     </div>
 
@@ -525,6 +544,135 @@
       margin: 0;
     }
 
+    #copiedIP {
+      width: 45vh;
+      height: 30vh;
+      background-color: #f5f5f5;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      margin-left: -23vh;
+      border-radius: 10pt;
+    }
+
+    #copiedIP {
+      display: none;
+    }
+
+    #copiedIP p {
+      margin: 0;
+    }
+
+    #copiedCheck {
+      font-size: 12vh;
+      color: green;
+      font-family: sans-serif;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #copiedText {
+      width: 100%;
+      font-size: 5vh;
+      font-family: sans-serif;
+      color: #777;
+      display: flex;
+      justify-content: center;
+    }
+
+    #copiedText2 {
+      width: 100%;
+      font-size: 2vh;
+      font-family: sans-serif;
+      color: #aaa;
+      display: flex;
+      margin-top: 20pt;
+      justify-content: center;
+    }
+
+    /* CHECKMARK */
+
+    .checkmark {
+  width: 14vh;
+  margin: 0 auto;
+  padding-top: 4vh;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 2s ease-in-out;
+  -webkit-animation: dash 2s ease-in-out;
+}
+
+.spin {
+  animation: spin 2s;
+  -webkit-animation: spin 2s;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+#copiedIP p {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  animation: text .5s linear .4s;
+  -webkit-animation: text .4s linear .3s;
+}
+
+@-webkit-keyframes dash {
+ 100% {
+   stroke-dashoffset: 0;
+ }
+}
+
+@keyframes dash {
+ 0% {
+   stroke-dashoffset: 1000;
+ }
+ 100% {
+   stroke-dashoffset: 0;
+ }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+
+
+  @keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+}
+
     </style>
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -534,6 +682,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://mcapi.us/scripts/minecraft.js"></script>
     <script src="./js/clipboard.min.js"></script>
     <script src="./js/particles.js/particles.min.js"></script>

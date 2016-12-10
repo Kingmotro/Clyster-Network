@@ -67,3 +67,10 @@ function menuCloseRules() {
 }
 
 new Clipboard('.ip');
+
+$(document).ready(function(){
+    $("#Info").click(function(){
+        $("#copiedIP").fadeIn(1500);
+        $("#copiedIP").fadeOut(3500);
+    });
+});
