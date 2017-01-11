@@ -28,7 +28,7 @@
             <h1>SHOP</h1>
           </div>
         </a>
-        <a href="http://www.clyster.net/forums/">
+        <a href="http://forums.clyster.net/">
           <div class="Navs">
             <h1>FORUM</h1>
           </div>
@@ -70,6 +70,22 @@
         <div id="rulesContent">
           <h1>RULES</h1>
           <hr>
+          <article id="allRules">
+            <h3>• Respect All Server Members</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Account &amp; Responsibility</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Cheating &amp; Scamming</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Ranks &amp; Shop</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Advertising &amp; Spamming</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Language &amp; Skins</h3>
+            <p>- Penalty: ?</p>
+            <h3>• Bullying &amp; Fraud</h3>
+            <p>- Penalty: ?</p>
+          </article>
         </div>
       </div>
 
@@ -100,12 +116,12 @@
     <div id="Logo">
 
       <div id="Menu">
-        <a href="#">
+        <a href="http://shop.clyster.net/">
           <div class="navs">
             <i class="material-icons">shopping_cart</i><h1>SHOP</h1>
           </div>
         </a>
-        <a href="http://www.clyster.net/forums/">
+        <a href="http://forums.clyster.net/">
           <div class="navs">
             <i class="material-icons">account_circle</i><h1>FORUM</h1>
           </div>
@@ -120,8 +136,8 @@
             <i class="material-icons">assignment</i><h1>RULES</h1>
           </div>
         </a>
-        <a href="#">
-          <div class="navs" onclick="changelogOpen()">
+        <a href="http://forums.clyster.net/forums/changelogs.3/">
+          <div class="navs">
             <i class="material-icons">folder</i><h1>CHANGELOG</h1>
           </div>
         </a>
@@ -367,14 +383,36 @@
       box-shadow: 0pt 16pt 10pt rgba(000, 0, 0, 0.2);
       display: flex;
       flex-direction: column;
-      color: #aaa;
       overflow-y: auto;
+    }
+
+    #allRules {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #allRules h3 {
+      font-family: sans-serif;
+      margin: 0;
+      margin-top: 2vh;
+      color: #aaa;
+    }
+
+    #allRules p {
+      margin-top: 1vh;
+      font-style: italic;
+      color: #000;
     }
 
     #rulesContent {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    #rulesContent h1, #rulesContent hr {
+      color: #0C707F;
     }
 
     #rules {
@@ -510,6 +548,8 @@
       justify-content: center;
       height: 25vh;
       cursor: pointer;
+      border-bottom-left-radius: 10pt;
+      border-top-left-radius: 10pt;
     }
 
     #playersOnline {
