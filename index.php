@@ -4,17 +4,16 @@
     <meta charset="utf-8">
     <title>Clyster Network&trade;</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
     <?php
-    $playeronline = file_get_contents('http://minecraft-api.com/api/ping/playeronline.php?ip=37.59.55.171&port=25565');
+    $playeronline = file_get_contents('http://minecraft-api.com/api/ping/playeronline.php?ip=149.202.150.189&port=25565');
     ?>
 
     <?php
-    $maxplayer = file_get_contents('http://minecraft-api.com/api/ping/maxplayer.php?ip=37.59.55.171&port=25565');
+    $maxplayer = file_get_contents('http://minecraft-api.com/api/ping/maxplayer.php?ip=149.202.150.189&port=25565');
     ?>
 
     <!-- RESPONSIVE MOBILE EVENTS -->
@@ -24,7 +23,7 @@
         <i class="material-icons" onclick="mobileMenuClose()">close</i>
       </div>
       <div id="mobilemenuNavs">
-        <a href="http://shop.clyster.net/">
+        <a href="#">
           <div class="Navs">
             <h1>SHOP</h1>
           </div>
@@ -42,11 +41,9 @@
         <div class="Navs" onclick="menuCloseRules()">
           <h1>RULES</h1>
         </div>
-        <a href="http://forums.clyster.net/forums/changelogs.3/">
-        <div class="Navs">
+        <div class="Navs" onclick="menuCloseChangelog()">
           <h1>CHANGELOG</h1>
         </div>
-        </a>
         <div class="Navs" onclick="menuCloseTerms()">
           <h1>TERMS AND CONDITIONS</h1>
         </div>
@@ -59,7 +56,7 @@
         <h1>Clyster Network</h1>
       </div>
       <div id="actionbarRight">
-
+        <i class="material-icons">more_vert</i>
       </div>
     </div>
 
@@ -180,17 +177,16 @@
     </div>
 
     <div id="ClysterLogo">
-      <img id="" src="./img/logoPS.png" alt="logo">
+      <img id="" src="./img/logo.png" alt="logo">
     </div>
 
     <style type="text/css">
     body {
-      background-image: url("./img/backgPS.png");
+      background-image: url("./img/bg1.png");
       background-size: cover;
       background-attachment: fixed;
       height: 100vh;
       margin: 0;
-      font-family: 'Josefin Sans', sans-serif;
     }
 
     a, a:link, a:visited {
@@ -347,18 +343,18 @@
     /* CONTENTS */
 
     #contents {
-      width: 90%;
+      width: 60%;
       height: 95vh;
       z-index: 5;
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      left: 5vw;
+      left: 20%;
     }
 
     #contents hr {
-      width: 50vw;
+      width: 30vh;
     }
 
     #contents h1 {
@@ -388,14 +384,12 @@
       display: flex;
       flex-direction: column;
       overflow-y: auto;
-      font-size: 2vh;
     }
 
     #allRules {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
     }
 
     #allRules h3 {
@@ -403,14 +397,12 @@
       margin: 0;
       margin-top: 2vh;
       color: #aaa;
-      font-size: 2vh;
     }
 
     #allRules p {
       margin-top: 1vh;
       font-style: italic;
       color: #000;
-      font-size: 1.5vh;
     }
 
     #rulesContent {
@@ -419,7 +411,7 @@
       align-items: center;
     }
 
-    #rulesContent h1 {
+    #rulesContent h1, #rulesContent hr {
       color: #0C707F;
     }
 
@@ -457,17 +449,12 @@
       flex-direction: column;
       color: #aaa;
       overflow-y: auto;
-      font-size: 2vh;
     }
 
     #termsContent {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    #termsContent h1 {
-      color: #0C707F;
     }
 
     #terms {
@@ -535,6 +522,7 @@
 
     .navs h1 {
       font-size: 3vh;
+      font-family: sans-serif;
       color: white;
       margin-left: 5vh;
     }
@@ -566,6 +554,7 @@
 
     #playersOnline {
       font-size: 10vh;
+      font-family: sans-serif;
       margin: 0;
       font-weight: bold;
       display: flex;
@@ -580,6 +569,7 @@
 
     #ip {
       font-size: 4vh;
+      font-family: sans-serif;
       padding: 5pt;
       margin: 0;
       color: white;
@@ -590,6 +580,7 @@
 
     #online {
       font-size: 4vh;
+      font-family: sans-serif;
       color: #0C707F;
       margin: 0;
     }
